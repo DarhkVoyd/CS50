@@ -10,7 +10,7 @@ body {
 
 #nav-bar {
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	z-index: 10;
 	display: flex;
 	flex-direction: row;
@@ -28,7 +28,7 @@ nav {
 	height: 100%;
 }
 
-ul {
+ul#nav-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -36,7 +36,7 @@ ul {
 	padding: 10px 25px 10px 25px;
 }
 
-li {
+li.nav-item {
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: 10px;
@@ -110,17 +110,146 @@ a.active {
 	width: auto;
 }
 
-img {
-	width: 100vw;
+img.backgrounds {
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
 }
 
-@media (max-width: 780px) {
-	.carousel-item img {
-		position: absolute;
-		object-fit: cover;
-		top: 0;
-		left: 0;
-		right: 0;
-		min-height: 100vh;
-	}
+.main-container {
+	z-index: 10;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(255, 255, 255);
+}
+
+.about-container {
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: fit-content;
+}
+
+.card {
+	z-index: 11;
+	background-color: rgb(250, 250, 250);
+	padding: 3rem;
+	margin: 5rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: fit-content;
+	color: black;
+}
+
+.teacher-card {
+	margin: 4rem;
+	width: fit-content;
+}
+
+#contacts-card {
+	background-color: transparent;
+}
+
+.about-card {
+	width: fit-content;
+	padding: 3rem;
+	margin: 1rem 3em 1em 3em;
+	background-color: rgb(245, 245, 245);
+	font-size: 18px;
+}
+
+.carded-image {
+	z-index: 11;
+	margin: 5rem;
+	border-radius: 5px;
+}
+
+h3.card-heading {
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+
+img.card-img {
+	border-radius: 5px;
+	max-width: 100%;
+	width: 80%;
+}
+
+img[alt='Teacher Image'] {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 60%;
+	clip-path: circle();
+}
+
+.about-card:first-child {
+	font-style: italic;
+	font-size: 18.5px;
+}
+
+p.teacher-about {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	font-size: 16px;
+}
+
+.contacts-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+}
+
+#contact-us {
+	margin-bottom: 1px;
+	text-transform: uppercase;
+	font-size: 48px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #333;
+	background-color: white;
+	padding: 0.2em;
+	border-radius: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+#contacts {
+	font-size: 18px;
+	margin-top: 6em;
+	flex: 1;
+	text-align: center;
+	padding: 1.5em;
+	width: fit-content;
+	background-color: white;
+	border-radius: 10px;
+}
+
+form {
+	flex: 2;
+	padding: 5em;
+	width: 10px;
+	height: 100%;
+}
+
+input,
+textarea {
+	margin-bottom: 2em;
+	width: 100%;
+	padding: 0.6em;
+	resize: vertical;
+	max-height: 15em;
+	border-radius: 5px;
+}
+
+button {
+	background-color: white;
+	padding: 0.3em 0.7em 0.3em 0.7em;
+	border-radius: 5px;
 }
