@@ -22,25 +22,38 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
 			rel="stylesheet"
 		/>
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
 		<link href="styles.css" rel="stylesheet" />
-		<title>CS50's Introduction to Computer Science</title>
+		<link href="media.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js" async></script>
+		<title>CS50's Introduction to Computer Science</title>
 	</head>
 	<body>
 		<!-- The Nav Bar -->
-		<div id="nav-bar">
+		<div id="nav-bar" class="navigation">
 			<div class="nav-header">
 				<header><h1 class="logo">CS50</h1></header>
 			</div>
 			<div class="nav-wrapper">
 				<nav>
-					<ul id="nav-list">
+					<ul class="navigation" id="nav-list">
 						<li class="nav-item">
 							<a href="index.html" class="active">Home</a>
 						</li>
 						<li class="nav-item"><a href="teachers.html">Teachers</a></li>
 						<li class="nav-item"><a href="contact.html">Contact</a></li>
 						<li class="nav-item"><a href="about.html">About</a></li>
+						<li class="nav-item icon">
+							<a href="javascript:void(0);" onclick="myFunction()"
+								><i class="fa fa-bars"></i>
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -54,19 +67,35 @@
 		<div class="carousel slide" data-bs-ride="carousel" id="Home">
 			<div class="carousel-inner">
 				<div class="carousel-item active" data-bs-interval="2500">
-					<img src="img/1.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/1.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/2.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/2.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/3.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/3.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/4.jpg" class="d-block w-100" alt="..." />
+					<img src="img/4.jpg" class="d-block w-100" alt="This is CS50 Bus" />
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/5.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/5.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 			</div>
 		</div>
@@ -78,7 +107,7 @@
 			<div class="card">
 				<h3 class="card-heading">What is CS50x</h3>
 				<img class="card-img" src="img/cs50.png" alt="CS50 Logo" />
-				<p>
+				<p class="homepage-text">
 					This is CS50x , Harvard University's introduction to the intellectual
 					enterprises of computer science and the art of programming for majors
 					and non-majors alike, with or without prior programming experience. An
@@ -98,7 +127,7 @@
 				alt="Instructor David Malan"
 			/>
 
-			<img class="backgrounds" src="img/6.jpg" alt="Mountain" />
+			<img class="backgrounds" src="img/6.jpg" alt="Black and White Sea" />
 		</div>
 		<!-- Last Wrapper -->
 		<div class="main-container">
@@ -111,33 +140,33 @@
 				<h3 class="card-heading">What you'll learn</h3>
 				<img class="card-img" src="img/cs50.png" alt="CS50 Logo" />
 				<ul>
-					<li>
+					<li class="homepage-text">
 						A broad and robust understanding of computer science and programming
 					</li>
-					<li>
+					<li class="homepage-text">
 						How to think algorithmically and solve programming problems
 						efficiently
 					</li>
-					<li>
+					<li class="homepage-text">
 						Concepts like abstraction, algorithms, data structures,
 						encapsulation, resource management, security, software engineering,
 						and web development
 					</li>
-					<li>
+					<li class="homepage-text">
 						Familiarity in a number of languages, including C, Python, SQL, and
 						JavaScript plus CSS and HTML
 					</li>
-					<li>
+					<li class="homepage-text">
 						How to engage with a vibrant community of like-minded learners from
 						all levels of experience
 					</li>
-					<li>
+					<li class="homepage-text">
 						How to develop and present a final programming project to your peers
 					</li>
 				</ul>
 			</div>
 
-			<img class="backgrounds" src="img/7.jpg" alt="Late" />
+			<img class="backgrounds" src="img/7.jpg" alt="River Flowing" />
 		</div>
 
 		<!-- Foooter -->

@@ -23,8 +23,10 @@
 			rel="stylesheet"
 		/>
 		<link href="styles.css" rel="stylesheet" />
-		<title>CS50's Introduction to Computer Science</title>
+		<link href="media.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js" async></script>
+		<title>CS50's Introduction to Computer Science</title>
 	</head>
 	<body>
 		<!-- The Nav Bar -->
@@ -41,6 +43,11 @@
 						</li>
 						<li class="nav-item"><a href="contact.html">Contact</a></li>
 						<li class="nav-item"><a href="about.html">About</a></li>
+						<li class="nav-item icon">
+							<a href="javascript:void(0);" onclick="myFunction()"
+								><i class="fa fa-bars"></i>
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -54,19 +61,35 @@
 		<div class="carousel slide" data-bs-ride="carousel" id="Home">
 			<div class="carousel-inner">
 				<div class="carousel-item active" data-bs-interval="2500">
-					<img src="img/1.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/1.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/2.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/2.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/3.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/3.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/4.jpg" class="d-block w-100" alt="..." />
+					<img src="img/4.jpg" class="d-block w-100" alt="This is CS50 Bus" />
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/5.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/5.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 			</div>
 		</div>
@@ -74,11 +97,11 @@
 		<!-- Main Section -->
 
 		<!-- First Wrapper -->
-		<div class="main-container">
+		<div class="main-container" id="instructors">
 			<!-- <h2>About the instructors</h2> -->
 			<div class="card teacher-card">
 				<h3 class="card-heading">David J. Malan</h3>
-				<img class="card-img" src="img/david3.jpg" alt="Teacher Image" />
+				<img class="card-img" src="img/david3.jpg" alt="David J Malan" />
 				<p class="teacher-about">
 					<b>David J. Malan</b> is Gordon McKay Professor of the Practice of
 					Computer Science at Harvard University. He teaches Computer Science
@@ -90,7 +113,7 @@
 
 			<div class="card teacher-card">
 				<h3 class="card-heading">Doug Lloyd</h3>
-				<img class="card-img" src="img/doug.jpeg" alt="Teacher Image" />
+				<img class="card-img" src="img/doug.jpeg" alt="Doug Lloyd" />
 				<p class="teacher-about">
 					<b>Doug</b> is a Senior Preceptor in Computer Science in the Division
 					of Continuing Education at Harvard University. He received his A.B. in
@@ -100,7 +123,7 @@
 
 			<div class="card teacher-card">
 				<h3 class="card-heading">Brian Yu</h3>
-				<img class="card-img" src="img/brian.png" alt="Teacher Image" />
+				<img class="card-img" src="img/brian.png" alt="Brian Yu" />
 				<p class="teacher-about">
 					<b>Brian</b> is a Senior Preceptor in Computer Science in the Division
 					of Continuing Education at Harvard University. He received his A.B. in
@@ -108,7 +131,7 @@
 				</p>
 			</div>
 
-			<img class="backgrounds" src="img/8.jpg" alt="Mountain" />
+			<img class="backgrounds" src="img/8.jpg" alt="Foggy Forest" />
 		</div>
 
 		<!-- Foooter -->

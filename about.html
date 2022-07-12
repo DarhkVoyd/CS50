@@ -23,8 +23,10 @@
 			rel="stylesheet"
 		/>
 		<link href="styles.css" rel="stylesheet" />
-		<title>CS50's Introduction to Computer Science</title>
+		<link href="media.css" rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js" async></script>
+		<title>CS50's Introduction to Computer Science</title>
 	</head>
 	<body>
 		<!-- The Nav Bar -->
@@ -41,6 +43,11 @@
 						<li class="nav-item">
 							<a href="about.html" class="active">About</a>
 						</li>
+						<li class="nav-item icon">
+							<a href="javascript:void(0);" onclick="myFunction()"
+								><i class="fa fa-bars"></i>
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -54,19 +61,35 @@
 		<div class="carousel slide" data-bs-ride="carousel" id="Home">
 			<div class="carousel-inner">
 				<div class="carousel-item active" data-bs-interval="2500">
-					<img src="img/1.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/1.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/2.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/2.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/3.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/3.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/4.jpg" class="d-block w-100" alt="..." />
+					<img src="img/4.jpg" class="d-block w-100" alt="This is CS50 Bus" />
 				</div>
 				<div class="carousel-item" data-bs-interval="2500">
-					<img src="img/5.jpg" class="d-block w-100" alt="..." />
+					<img
+						src="img/5.jpg"
+						class="d-block w-100"
+						alt="David Teaching Class"
+					/>
 				</div>
 			</div>
 		</div>
@@ -76,9 +99,7 @@
 		<!-- First Wrapper -->
 		<div class="main-container about-container">
 			<div class="card about-card">
-				<h3 class="card-heading" style="text-transform: uppercase">
-					About this course
-				</h3>
+				<h3 class="card-heading" id="about-heading">About this course</h3>
 				<p>
 					&#8226; This is CS50x , Harvard University's introduction to the
 					intellectual enterprises of computer science and the art of
